@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior Skills</title>
+    <link rel="stylesheet" href="../../style/normalize.css">
+    <link rel="stylesheet" href="../../style/style.css">
+    <script defer src="../../js/menu.js"></script>
+</head>
+<body>
+    <section class="section section__menu section__menu--black">
+        <div class="container container__menu">
+            <a href="../../index.html" class="logo__link">
+                <img class="logo__img" src="../../img/menu/logo.png" alt="Junior Skills">
+            </a>
+            <nav class="menu">
+                <div class="menu__wrap">
+                    <a href="../../index.html#lessons" class="link menu__link">Занятия</a>
+                    <a href="../resource.html" class="link menu__link">Ресурсы</a>
+                    <a href="../works.html" class="link menu__link">Работы</a>
+                    <a href="../statistics.html" class="link menu__link">Статистика</a>
+                    <a href="../deadlines.html" class="link menu__link">Дедлайны</a>
+                    <a href="../life.html" class="link menu__link">LIVE</a>
+                </div>
+                <div class="menu__wrap">
+                    <div class="menu__inner--row">
+                        <a class="cross__btn"></a>
+                        <div class="menu__inner--btn">
+                            <button class="btn menu__btn experience">
+                                XP <span class="btn__value--menu">100</span>
+                            </button>
+                            <a href="../messages.html" class="btn menu__btn copter">
+                                <div class="copter__img"></div>
+                                <span class="btn__value--menu">1</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="btn__account">
+                        <a class="btn menu__btn menu__btn--yellow">
+                            Аккаунт
+                            <span>&#8250;</span>
+                        </a>
+                        <div class="btn__yellow--inner">
+                            <div>
+                                <a href="../auth.html">Войти</a>
+                                <!-- <a href="../user.html">Моя&nbsp;страница</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <a class="burger__btn"></a>
+        </div>
+    </section>
+
+    <section class="section section__lesson padd-0">
+        <div class="container container__lesson bg--white">
+            <h2 class="title lesson__title">Условные операторы</h2>
+            <div class="lesson__content target">
+                <h3 class="subtitle lesson__subtitle target__subtitle">
+                    Цель:
+                </h3>
+                <p class="text lesson__text target__text">
+                    Познакомиться с условными и тернарным операторами, изучить конструкции выбора
+                </p>
+            </div>
+            <div class="lesson__content tasks">
+                <h3 class="subtitle lesson__subtitle tasks__subtitle">
+                    Задачи:
+                </h3>
+                <ul class="tasks__list">
+                    <li>Узнать про тип boolean</li><li>Рассмотреть типы и их сравнения</li><li>Научиться работать с условными операторами if..else и switch</li><li>Научиться использовать краткую запись if…else</li>
+                </ul>
+            </div>
+            <div class="lesson__content material">
+                <h3 class="subtitle lesson__subtitle material__subtitle">
+                    Материал:
+                </h3>
+                <div class="presentation lesson__presentation">
+                    <iframe allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" frameborder="0" class="box" src="https://docs.google.com/presentation/d/e/2PACX-1vTOezGkHshWgfxytCn6WanDGhHIKHqD2LhVS1t7tGWPa9noTG4uDkDLLEjigxtisbqdSccYyseJaei1/embed?start=false&loop=false&delayms=3000"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="container container__lesson bg--yellow">
+            <div class="lesson__content useful">
+                <h3 class="subtitle lesson__subtitle useful__subtitle">
+                    Полезные ссылки:
+                </h3>
+                <p class="text lesson__text useful__text">
+                    <a class="lesson__link" href="https://doka.guide/js/if-else/">doka.guide(if...else)</a>
+                    <a class="lesson__link" href="https://doka.guide/js/switch/">doka.guide(switch)</a>
+                    <a class="lesson__link" href="https://doka.guide/js/ternary-operator/">doka.guide(Тернарный оператор)</a>
+                </p>
+            </div>
+            <div class="lesson__content changes">
+                <h3 class="subtitle lesson__subtitle changes__subtitle">
+                    Критерии сдачи:
+                </h3>
+                <p class="text"></p><p><strong>Задача 1.</strong> Научиться искать подстроку внутри строки и попрактиковаться со сложными условиями.</p><p>В переменную password запишите строку с любым произвольным паролем. Проверьте надёжность пароля с помощью условного оператора if. Пароль является надёжным, когда в нём есть хотя бы четыре символа, один из которых — это дефис или нижнее подчёркивание. Выведите в консоль сообщения «Пароль надёжный» или «Пароль недостаточно надёжный».</p><p><strong>Советы и рекомендации</strong></p><p>Для проверки наличия в строке другой строки можно воспользоваться конструкцией password.includes('x'), где 'x' — строка для поиска. Поэкспериментируйте с этой командой, посмотрите, что она будет выводить в консоль, попробуйте подставить разные параметры. Это поможет понять принцип её работы.</p><p><strong>Проверка результата</strong></p><p>Для проверки запустите код с разными вариантами надёжных и ненадёжных паролей. Примеры корректных паролей:</p><ul><li>1234-</li><li>4321_</li><li>qaz-xsw</li><li>_zxd</li></ul><p><strong>Примеры некорректных паролей:</strong></p><ul><li>_-a</li><li>qaz</li><li>_-3</li><li>123456789</li></ul><p><strong>Что оценивается</strong></p><p>Код корректно выводит сообщение в зависимости от значения переменной password.</p><p><strong>Задача 2.</strong> Узнать, как преобразовывать строку в верхний/нижний регистр и извлекать произвольные куски из строки.</p><p>В переменных userName, userSurname даны имя и фамилия пользователя. При этом в строках беспорядок с большими и маленькими буквами, и нужно оформить строки единообразно. Для этого первые буквы имени и фамилии приведите к верхнему регистру (большие буквы), а оставшиеся — к нижнему (маленькие буквы). Запишите результат в новые переменные и выведите их значения с помощью console.log. С помощью тернарных операторов и console.log выведите сообщение «Имя было преобразовано» или «Имя осталось без изменений» для имени и фамилии в зависимости от того, были ли исходные строки равны преобразованным.</p><p><strong>Проверка результата</strong></p><p>Для любых имени и фамилии в любом регистре должны выводиться такие же имя и фамилия, но первая буква у них большая, а все остальные — маленькие.</p><p><strong>Что оценивается</strong></p><p>Код корректно выводит все сообщения в зависимости от значения переменных userName и userSurname.</p><p><strong>Советы и рекомендации</strong></p><p>Для получения куска строки можно воспользоваться конструкцией str.substring(indexA, indexB), где str — название переменной с исходной строкой, indexA — целое число от нуля до длины строки, указывающее номер символа начала куска строки, indexB — целое число от нуля до длины строки, указывающее номер символа конца куска строки. Если indexB не указывать, то вы получите кусок от indexA до конца строки. Например, так можно получить первый символ строки: let first = str.substring(0, 1), а так — остаток строки: let last = str.substring(1). Конструкцию можно присвоить переменной, с которой потом можно работать как с обычной строкой. Для преобразования букв строки к верхнему регистру воспользуйтесь конструкцией str.toUpperCase(), к нижнему — str.toLowerCase(). Результат аналогично можно присвоить переменной.</p><p><strong>Задача 3. Научиться проверять числа на чётность.</strong></p><p>В переменной number записано число. Необходимо с помощью console.log вывести сообщение, указывающее на чётность или нечётность числа.</p><p><strong>Проверка результата</strong></p><p>Для проверки подставляйте различные значения в переменную number и оценивайте корректность результата.</p><p><strong>Пример:</strong></p><ul><li>number = 2, console.log(“Число чётное”);</li><li>number = 5, console.log(“Число нечётное”);</li><li>number = 8, console.log(“Число чётное”);</li></ul><p><strong>Что оценивается</strong></p><p>Алгоритм выводит правильный ответ на экран.</p><p><strong>Советы и рекомендации</strong></p><p>Для проверки числа на чётность можно использовать оператор «Остаток от деления» — %. Например, если произвести операцию 5 % 2, вы получаете 1. Это означает, что число 5 — нечётное. Если использовать другое число: 4 % 2 , в ответе получается 0. Это означает, что число чётное. Попробуйте совместить эту команду с условным оператором.</p><p>Сейчас может быть непонятно, как применять эти задачи в реальной практике. Но после изучения базовых команд — инструментов языка программирования мы перейдём к более реальным заданиям и работе с графическими элементами на странице в браузере.</p><p></p>
+            </div>
+            <div class="lesson__content nochanges">
+                <h3 class="subtitle lesson__subtitle nochanges__subtitle">
+                    Не зачёт:
+                </h3>
+                <ul class="text crit__text changes__text">
+                    <li>Не выполнено хотя бы одно из выше перечисленных заданий</li><li>Выполненные задания не полноценны</li><li>Выполненные задания имею существенные недочеты/ошибки</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

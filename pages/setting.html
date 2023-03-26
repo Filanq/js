@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="../../style/normalize.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <script defer src="../js/menu.js"></script>
+    <script defer src="../js/user.js"></script>
+</head>
+
+<body class="over--hidden">
+    <section class="section section__menu section__menu--black works__menu">
+        <div class="container container__menu">
+            <a href="../../index.html" class="logo__link">
+                <img class="logo__img" src="../../img/menu/logo.png" alt="Junior Skills">
+            </a>
+            <nav class="menu">
+                <div class="menu__wrap">
+                    <a href="../index.html#lessons" class="link menu__link">Занятия</a>
+                    <a href="resource.html" class="link menu__link">Ресурсы</a>
+                    <a href="works.html" class="link menu__link">Работы</a>
+                    <a href="statistics.html" class="link menu__link">Статистика</a>
+                    <a href="deadlines.html" class="link menu__link">Дедлайны</a>
+                    <a href="life.html" class="link menu__link">LIVE</a>
+                </div>
+                <div class="menu__wrap">
+                    <div class="menu__inner--row">
+                        <a class="cross__btn"></a>
+                        <div class="menu__inner--btn">
+                            <button class="btn menu__btn experience">
+                                XP <span class="btn__value--menu">100</span>
+                            </button>
+                            <a href="messages.html" class="btn menu__btn copter">
+                                <div class="copter__img"></div>
+                                <span class="btn__value--menu">1</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="btn__account">
+                        <a class="btn menu__btn menu__btn--yellow">
+                            Аккаунт
+                            <span>&#8250;</span>
+                        </a>
+                        <div class="btn__yellow--inner ">
+                            <div>
+                                <a href="auth.html">Войти</a>
+                                <!-- <a href="user.html">Моя&nbsp;страница</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <a class="burger__btn"></a>
+        </div>
+    </section>
+    
+
+
+
+    <section class="section section__settings">
+        <div class="container container__settings">
+            <h2 class="title settings__title">Изменить профиль</h2>
+            <form action="" method="post" enctype="multipart/form-data">
+                <div class="settings__inner">
+                    <h3 class="settings__subtitle">Никнейм</h3>
+                    <input type="text" name="nick" class="settings__nickname">
+                </div>
+                <div class="settings__inner">
+                    <h3 class="settings__subtitle">Описание</h3>
+                    <textarea name="about" class="settings__about"></textarea>
+                </div>
+                <div class="settings__inner">
+                    <h3 class="settings__subtitle">Аватар</h3>
+                    <input type="file" name="logo" class="settings__logo">
+                </div>
+                <div class="settings__inner">
+                    <h3 class="settings__subtitle">Шапка</h3>
+                    <input type="file" name="hat" class="settings__hat">
+                </div>
+                <input type="button" class="submit settings__submit" value="Сохранить">
+            </form>
+        </div>
+    </section>
+
+
+    <section class="section section__settings bg--yellow">
+        <div class="container container__settings">
+            <h2 class="title settings__title">Изменить пароль</h2>
+            <form method="post" enctype="multipart/form-data">
+                <div class="settings__inner">
+                    <h3 class="settings__subtitle">Пароль</h3>
+                    <input type="text" name="nick" class="settings__nickname">
+                </div>
+                <div class="settings__inner">
+                    <h3 class="settings__subtitle">Подтверждение пароля</h3>
+                    <input type="text" name="nick" class="settings__nickname">
+                </div>
+                <input type="button" class="submit settings__submit submit--white" value="Сохранить">
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>

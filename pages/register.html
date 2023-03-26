@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="../../style/normalize.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <script defer src="../js/menu.js"></script>
+</head>
+
+<body class="bg--yellow">
+    <section class="section section__menu section__menu--black works__menu">
+        <div class="container container__menu">
+            <a href="../../index.html" class="logo__link">
+                <img class="logo__img" src="../../img/menu/logo.png" alt="Junior Skills">
+            </a>
+            <nav class="menu">
+                <div class="menu__wrap">
+                    <a href="../index.html#lessons" class="link menu__link">Занятия</a>
+                    <a href="resource.html" class="link menu__link">Ресурсы</a>
+                    <a href="works.html" class="link menu__link">Работы</a>
+                    <a href="statistics.html" class="link menu__link">Статистика</a>
+                    <a href="deadlines.html" class="link menu__link">Дедлайны</a>
+                    <a href="life.html" class="link menu__link">LIVE</a>
+                </div>
+                <div class="menu__wrap">
+                    <div class="menu__inner--row">
+                        <a class="cross__btn"></a>
+                        <div class="menu__inner--btn">
+                            <button class="btn menu__btn experience">
+                                XP <span class="btn__value--menu">100</span>
+                            </button>
+                            <a href="messages.html" class="btn menu__btn copter">
+                                <div class="copter__img"></div>
+                                <span class="btn__value--menu">1</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="btn__account">
+                        <a class="btn menu__btn menu__btn--yellow">
+                            Аккаунт
+                            <span>&#8250;</span>
+                        </a>
+                        <div class="btn__yellow--inner ">
+                            <div>
+                                <a href="auth.html">Войти</a>
+                                <!-- <a href="user.html">Моя&nbsp;страница</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <a class="burger__btn"></a>
+        </div>
+    </section>
+
+    <section class="section section__auth bg--white">
+        <div class="container container__auth">
+            <h2 class="title auth__title">Регистрация</h2>
+            <form class="auth__form" action="#" method="post" enctype="application/x-www-form-urlencoded">
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="Введите почту" name="email" id="email">
+                <label for="name">Имя</label>
+                <input type="text" placeholder="Введите имя" name="name" id="name">
+                <label for="surname">Фамилия</label>
+                <input type="text" placeholder="Введите фамилию" name="surname" id="surname">
+                <label for="lastname">Отчество</label>
+                <input type="text" placeholder="Введите отчество" name="lastname" id="lastname">
+                <label for="pass">Пароль</label>
+                <input type="password" placeholder="Введите пароль" name="password" id="pass">
+                <label for="conf-pass">Подтверждение пароля</label>
+                <input type="password" placeholder="Подтвердите пароль" name="conf-password" id="conf-pass">
+                <input class="submit" type="button" value="Подтвердить">
+            </form>
+            <p class="red">Для подтверждения регистрации Вам необходимо указать <strong>действующий</strong> e-mail, позднее на него будет выслано письмо со ссылкой активации.</p>
+        </div>
+    </section>
+    <section class="section section__reg">
+        <div class="container container__reg">
+            <h2 class="subtitle reg__subtitle">После регистрации будет открыт доступ к дополнительным возможностям:</h2>
+            <p class="reg__text"><span class="cross__item">&#215;</span><span>Личный кабинет ученика</span></p>
+            <p class="reg__text"><span class="cross__item">&#215;</span><span>Доступ к прогрессу обучения</span></p>
+            <p class="reg__text"><span class="cross__item">&#215;</span><span>Система комментариев</span></p>
+        </div>
+    </section>
+</body>
+
+</html>

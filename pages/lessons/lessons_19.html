@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior Skills</title>
+    <link rel="stylesheet" href="../../style/normalize.css">
+    <link rel="stylesheet" href="../../style/style.css">
+    <script defer src="../../js/menu.js"></script>
+</head>
+<body>
+    <section class="section section__menu section__menu--black">
+        <div class="container container__menu">
+            <a href="../../index.html" class="logo__link">
+                <img class="logo__img" src="../../img/menu/logo.png" alt="Junior Skills">
+            </a>
+            <nav class="menu">
+                <div class="menu__wrap">
+                    <a href="../../index.html#lessons" class="link menu__link">Занятия</a>
+                    <a href="../resource.html" class="link menu__link">Ресурсы</a>
+                    <a href="../works.html" class="link menu__link">Работы</a>
+                    <a href="../statistics.html" class="link menu__link">Статистика</a>
+                    <a href="../deadlines.html" class="link menu__link">Дедлайны</a>
+                    <a href="../life.html" class="link menu__link">LIVE</a>
+                </div>
+                <div class="menu__wrap">
+                    <div class="menu__inner--row">
+                        <a class="cross__btn"></a>
+                        <div class="menu__inner--btn">
+                            <button class="btn menu__btn experience">
+                                XP <span class="btn__value--menu">100</span>
+                            </button>
+                            <a href="../messages.html" class="btn menu__btn copter">
+                                <div class="copter__img"></div>
+                                <span class="btn__value--menu">1</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="btn__account">
+                        <a class="btn menu__btn menu__btn--yellow">
+                            Аккаунт
+                            <span>&#8250;</span>
+                        </a>
+                        <div class="btn__yellow--inner">
+                            <div>
+                                <a href="../auth.html">Войти</a>
+                                <!-- <a href="../user.html">Моя&nbsp;страница</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <a class="burger__btn"></a>
+        </div>
+    </section>
+
+    <section class="section section__lesson padd-0">
+        <div class="container container__lesson bg--white">
+            <h2 class="title lesson__title">Делегирование</h2>
+            <div class="lesson__content target">
+                <h3 class="subtitle lesson__subtitle target__subtitle">
+                    Цель:
+                </h3>
+                <p class="text lesson__text target__text">
+                    Формирование начальных знаний и навыков работы с делегированием события.
+                </p>
+            </div>
+            <div class="lesson__content tasks">
+                <h3 class="subtitle lesson__subtitle tasks__subtitle">
+                    Задачи:
+                </h3>
+                <ul class="tasks__list">
+                    <li>Понятие всплытия и погружения</li><li>Самый глубокий элемент</li><li>Методы делегирования событий</li>
+                </ul>
+            </div>
+            <div class="lesson__content material">
+                <h3 class="subtitle lesson__subtitle material__subtitle">
+                    Материал:
+                </h3>
+                <div class="presentation lesson__presentation">
+                    <iframe allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" frameborder="0" class="box" src="https://docs.google.com/presentation/d/e/2PACX-1vT6F6qYfF_BNGtOptzyFoHCxuAGu7v_wGsF2Nvan4JSVOR_qipTOH68SIoSf-YJRnbn-lTt6AETIFTs/embed?start=false&loop=false&delayms=3000"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="container container__lesson bg--yellow">
+            <div class="lesson__content useful">
+                <h3 class="subtitle lesson__subtitle useful__subtitle">
+                    Полезные ссылки:
+                </h3>
+                <p class="text lesson__text useful__text">
+                    <a class="lesson__link" href="https://learn.javascript.ru/bubbling-and-capturing">learn.javascript (Всплытие и погружение)</a>
+                    <a class="lesson__link" href="https://learn.javascript.ru/event-delegation">learn.javascript (Делегирование событий)</a>
+                </p>
+            </div>
+            <div class="lesson__content changes">
+                <h3 class="subtitle lesson__subtitle changes__subtitle">
+                    Критерии сдачи:
+                </h3>
+                <p class="text"></p><p><strong>Задание 1. Спрячьте сообщения с помощью делегирования.</strong></p><p>Создайте кнопку и блок с lorem текстом. Добавьте JavaScript к кнопке button, чтобы при нажатии элемент &lt;div id="text"&gt; исчезал.</p><p><strong>Задание 2. Раскрывающееся дерево.</strong></p><p>Создайте дерево, которое по клику на заголовок скрывает-показывает потомков:</p><ul><li>Животные<ul><li>Млекопитающие<ul><li>Коровы</li><li>Ослы</li><li>Собаки</li><li>Тигры</li></ul></li><li>Другие<ul><li>Змеи</li><li>Птицы</li><li>Ящерицы</li></ul></li></ul></li><li>Рыбы<ul><li>Аквариумные<ul><li>Гуппи</li><li>Скалярии</li></ul></li><li>Морские<ul><li>Морская форель</li></ul></li></ul></li></ul><p><i><strong>Требования:</strong></i></p><ul><li>Использовать только один обработчик событий (применить делегирование)</li><li>Клик вне текста заголовка (на пустом месте) ничего делать не должен.</li></ul><p><strong>Задание 3. Поведение "подсказка".</strong></p><p>Напишите JS-код, реализующий поведение «подсказка». При наведении мыши на элемент с атрибутом&nbsp;data-tooltip, над ним должна показываться подсказка и скрываться при переходе на другой элемент.</p><p><i><strong>Пример HTML с подсказками:</strong></i></p><p>&lt;button data-tooltip="эта подсказка длиннее, чем элемент"&gt;Короткая кнопка&lt;/button&gt;</p><p>&lt;button data-tooltip="HTML&lt;br&gt;подсказка"&gt;Ещё кнопка&lt;/button&gt;</p><p>В этой задаче мы полагаем, что во всех элементах с атрибутом&nbsp;data-tooltip&nbsp;– только текст. То есть, в них нет вложенных тегов (пока).</p><p><i><strong>Детали оформления:</strong></i></p><ul><li>Отступ от подсказки до элемента с&nbsp;data-tooltip&nbsp;должен быть&nbsp;5px&nbsp;по высоте.</li><li>Подсказка должна быть, по возможности, посередине элемента.</li><li>Подсказка не должна вылезать за границы экрана, в том числе если страница частично прокручена, если нельзя показать сверху – показывать снизу элемента.</li><li>Текст подсказки брать из значения атрибута&nbsp;data-tooltip. Это может быть произвольный HTML.</li></ul><p><i><strong>Для решения вам понадобятся два события:</strong></i></p><ul><li><strong>mouseover&nbsp;</strong>срабатывает, когда указатель мыши заходит на элемент.</li><li><strong>mouseout&nbsp;</strong>срабатывает, когда указатель мыши уходит с элемента.</li></ul><p>Примените делегирование событий: установите оба обработчика на элемент&nbsp;document, чтобы отслеживать «заход» и «уход» курсора на элементы с атрибутом&nbsp;data-tooltip&nbsp;и управлять подсказками с их же помощью.</p><p>После реализации поведения – люди, даже не знакомые с JavaScript смогут добавлять подсказки к элементам.</p><p>P.S. В один момент может быть показана только одна подсказка.</p><p></p>
+            </div>
+            <div class="lesson__content nochanges">
+                <h3 class="subtitle lesson__subtitle nochanges__subtitle">
+                    Не зачёт:
+                </h3>
+                <ul class="text crit__text changes__text">
+                    <li>Выполнено менее двух решений задач</li><li>Выполненная работа не соответствует условию задания</li><li>Стили страницы подключены локально, а не в стороннем файле</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior Skills</title>
+    <link rel="stylesheet" href="../../style/normalize.css">
+    <link rel="stylesheet" href="../../style/style.css">
+    <script defer src="../../js/menu.js"></script>
+</head>
+<body>
+    <section class="section section__menu section__menu--black">
+        <div class="container container__menu">
+            <a href="../../index.html" class="logo__link">
+                <img class="logo__img" src="../../img/menu/logo.png" alt="Junior Skills">
+            </a>
+            <nav class="menu">
+                <div class="menu__wrap">
+                    <a href="../../index.html#lessons" class="link menu__link">Занятия</a>
+                    <a href="../resource.html" class="link menu__link">Ресурсы</a>
+                    <a href="../works.html" class="link menu__link">Работы</a>
+                    <a href="../statistics.html" class="link menu__link">Статистика</a>
+                    <a href="../deadlines.html" class="link menu__link">Дедлайны</a>
+                    <a href="../life.html" class="link menu__link">LIVE</a>
+                </div>
+                <div class="menu__wrap">
+                    <div class="menu__inner--row">
+                        <a class="cross__btn"></a>
+                        <div class="menu__inner--btn">
+                            <button class="btn menu__btn experience">
+                                XP <span class="btn__value--menu">100</span>
+                            </button>
+                            <a href="../messages.html" class="btn menu__btn copter">
+                                <div class="copter__img"></div>
+                                <span class="btn__value--menu">1</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="btn__account">
+                        <a class="btn menu__btn menu__btn--yellow">
+                            Аккаунт
+                            <span>&#8250;</span>
+                        </a>
+                        <div class="btn__yellow--inner">
+                            <div>
+                                <a href="../auth.html">Войти</a>
+                                <!-- <a href="../user.html">Моя&nbsp;страница</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <a class="burger__btn"></a>
+        </div>
+    </section>
+
+    <section class="section section__lesson padd-0">
+        <div class="container container__lesson bg--white">
+            <h2 class="title lesson__title">Массивы и циклы</h2>
+            <div class="lesson__content target">
+                <h3 class="subtitle lesson__subtitle target__subtitle">
+                    Цель:
+                </h3>
+                <p class="text lesson__text target__text">
+                    Изучить тип данных массив, его синтаксис, особенности и наиболее распространенные функции. Научиться применять циклы для решения различных задач.
+                </p>
+            </div>
+            <div class="lesson__content tasks">
+                <h3 class="subtitle lesson__subtitle tasks__subtitle">
+                    Задачи:
+                </h3>
+                <ul class="tasks__list">
+                    <li>Изучение способов задания массива</li><li>Изучение простых функций для работы с массивами</li><li>Определение доступа к элементам массива</li><li>Формирование навыков работы с одномерными массивами</li><li>Разобрать синтаксис циклов for, foreach, while, do while</li><li>Разобрать синтаксис управляющих операторов</li>
+                </ul>
+            </div>
+            <div class="lesson__content material">
+                <h3 class="subtitle lesson__subtitle material__subtitle">
+                    Материал:
+                </h3>
+                <div class="presentation lesson__presentation">
+                    <iframe allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" frameborder="0" class="box" src="https://docs.google.com/presentation/d/e/2PACX-1vSevCAfcmRTiZ0KR2cQisAPBV8U8oexD5ajPFcBsi-6UYC7bpR66-sWKHWvfYQfNbjDT6rGeJGEuMAT/embed?start=false&loop=false&delayms=3000"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="container container__lesson bg--yellow">
+            <div class="lesson__content useful">
+                <h3 class="subtitle lesson__subtitle useful__subtitle">
+                    Полезные ссылки:
+                </h3>
+                <p class="text lesson__text useful__text">
+                    <a class="lesson__link" href="https://learn.javascript.ru/array">learn.javascript (массивы)</a>
+                    <a class="lesson__link" href="https://doka.guide/js/arrays/">doka.guide(массив)</a>
+                    <a class="lesson__link" href="https://learn.javascript.ru/while-for">learn.javascript (циклы while и for)</a>
+                    <a class="lesson__link" href="https://doka.guide/js/for-in/">doka.guide(for...in)</a>
+                    <a class="lesson__link" href="https://doka.guide/js/while/">doka.guide(while)</a>
+                </p>
+            </div>
+            <div class="lesson__content changes">
+                <h3 class="subtitle lesson__subtitle changes__subtitle">
+                    Критерии сдачи:
+                </h3>
+                <p class="text"></p><p><strong>Задача 1. </strong>Работа с массивом на добавление / удаление элементов.</p><ul><li>Создайте пустой массив books</li><li>Наполните его тремя значениями (названиями любимых книг)</li><li>Добавьте в начало самую скучную книгу</li><li>Удалите последнюю книгу массива books</li></ul><p><strong>Задача 2. </strong>Дан одномерный массив целых чисел размерностью n элементов. Массив вводится с клавиатуры. Сформировать новый массив, в котором элементы размещаются в обратном порядке.</p><p><strong>Подсказка:</strong> функция prompt() позволяет произвести ввод с клавиатуры. Самостоятельно поработайте с документацией и изучите данный способ <a href="https://learn.javascript.ru/uibasic">https://learn.javascript.ru/uibasic</a></p><p><strong>Задача 3.</strong> Напишите генератор массивов длиной count со случайными числами от n до m. Учтите, что n и m могут быть отрицательными, а также может быть n &gt; m или n &lt; m. Выведите результат с помощью console.log.</p><p><strong>Проверка результата:</strong></p><ul><li>n = 0, m = 100, count = 50;</li><li>n = 2, m = 5, count = 10;</li><li>n = 50, m = -50, count = 50;</li><li>n = -100, m = -90, count = 20.</li></ul><p><strong>Задача 4.</strong> Дан одномерный массив целых чисел размерностью n рандомных элементов. Количество элементов массива вводится с клавиатуры. Выведите на экран чётные элементы массива.</p><p><strong>Задача 5.</strong> С помощью цикла создайте перевёрнутый вариант строки «Привет, мир!». Она должна превратиться в «!рим ,тевирП».</p><p><strong>Задача 6.</strong> Создайте массив с 100 рандомными элементами где первое число отрицательное, а второе положительное (оба вводятся с клавиатуры пользователем). Удалите из него все отрицательные элементы. Выведите в консоль значения первого и конечного массивов.</p><p></p>
+            </div>
+            <div class="lesson__content nochanges">
+                <h3 class="subtitle lesson__subtitle nochanges__subtitle">
+                    Не зачёт:
+                </h3>
+                <ul class="text crit__text changes__text">
+                    <li>Не выполнено хотя бы одно из выше перечисленных заданий</li><li>Выполненные задания не полноценны</li><li>Выполненные задания имею существенные недочеты/ошибки</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
