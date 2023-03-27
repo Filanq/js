@@ -1537,7 +1537,7 @@ input:focus{
     .banner__inner{
         font-size: 14px;
     }
-    body{
+    html, body{
         overflow-x: hidden;
     }
     .works__wrap{
