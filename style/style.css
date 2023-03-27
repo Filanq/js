@@ -1534,6 +1534,9 @@ input:focus{
     }
 }
 @media (max-width: 768px) {
+    .banner__inner{
+        font-size: 14px;
+    }
     body{
         overflow-x: hidden;
     }
