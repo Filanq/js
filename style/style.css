@@ -1534,6 +1534,9 @@ input:focus{
     }
 }
 @media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
     .works__wrap{
         grid-template-columns: repeat(auto-fill, 150px);
     }
